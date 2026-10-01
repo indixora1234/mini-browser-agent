@@ -1,0 +1,4 @@
+anthropic>=0.40
+playwright>=1.45
+python-dotenv>=1.0
+rich>=13.0

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><title>Test Trains</title></head>
+<body>
+  <h1>Test Trains</h1>
+  <input id="from" placeholder="From station">
+  <input id="to" placeholder="To station">
+  <input type="password" placeholder="Password">
+  <button onclick="search()">Search</button>
+  <ul id="results"></ul>
+  <script>
+    function search() {
+      const from = document.getElementById('from').value;
+      const to = document.getElementById('to').value;
+      document.getElementById('results').innerHTML =
+        `<li>${from} to ${to} 08:00, £45.00</li><li>${from} to ${to} 10:30, £23.50</li>`;
+    }
+  </script>
+</body>
+</html>
